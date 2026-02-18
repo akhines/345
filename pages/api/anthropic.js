@@ -41,20 +41,3 @@ export default async function handler(req, res) {
 
     return res.status(200).json(data);
   } catch (error) {
-    return res.status(500).json({ error: error.message });
-  }
-}
-
-export const config = {
-  runtime: 'edge',
-};
-```
-
-### **3. Folder Structure**
-```
-your-repo/
-├── index.html (keep your existing one)
-├── package.json (paste code above)
-└── pages/
-    └── api/
-        └── anthropic.js (paste code above)
